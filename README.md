@@ -13,4 +13,6 @@ ___
 NuGetパッケージ：Install-Package Microsoft.Data.SqlClient -Version 5.0.1  
 ```
 
+![Img](Readme_img.png)  
+
 ```

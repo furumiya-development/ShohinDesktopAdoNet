@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace ShohinDesktopAdoNet.Models.DomainObjects
 {
@@ -14,7 +10,9 @@ namespace ShohinDesktopAdoNet.Models.DomainObjects
         {
             if (value == null)
             {
-                throw new ArgumentNullException(nameof(value), "nullです。");
+                StackFrame frame = new StackFrame(1);
+                string className = frame.GetMethod()!.ReflectedType!.Name;
+                throw new DomainObjectException($"{className}はnullです。");
             }
         }
     }

@@ -9,7 +9,7 @@ namespace ShohinDesktopAdoNet.Models.Repositorys
     public class ShohinRepository : IShohinRepository
     {
         private const string SHOHIN_TABLE = "shohins"; //"SHOHIN_DATA_DESK";
-        private const string UNIQUE_ID = "uinque_id"; //"UNIQUE_ID";
+        private const string UNIQUE_ID = "unique_id"; //"UNIQUE_ID";
         private const string SHOHIN_CODE = "shohin_code"; //"SHOHIN_CODE";
         private const string SHOHIN_NAME = "shohin_name"; //"SHOHIN_NAME";
         private const string EDIT_DATE = "updated_on"; //"EDIT_DATE";
