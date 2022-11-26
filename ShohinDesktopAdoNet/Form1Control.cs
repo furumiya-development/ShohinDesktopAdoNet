@@ -30,6 +30,7 @@ namespace ShohinDesktopAdoNet
 
             fDesign.dataGridView1.DataSource = list;
             fDesign.DataGridSetting();
+            fDesign.richTextBox1.AppendText("ëSåèï\é¶ÇµÇ‹ÇµÇΩÅB");
         }
 
         private void ButtonAdd_Click(object sender, EventArgs e)

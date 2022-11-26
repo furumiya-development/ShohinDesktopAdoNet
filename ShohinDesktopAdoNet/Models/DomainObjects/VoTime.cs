@@ -23,7 +23,11 @@ namespace ShohinDesktopAdoNet.Models.DomainObjects
             CultureInfo ci = new CultureInfo("ja-JP");
             DateTimeStyles dts = DateTimeStyles.None;
 
-            if (DateTime.TryParseExact(time.ToString(), format, ci, dts, out _) == false)
+            var t = time.ToString();
+            if (t.Length < 6)
+                t = $"0{t}";
+
+            if (DateTime.TryParseExact(t, format, ci, dts, out _) == false)
             {
                 throw new ArgumentOutOfRangeException($"{time}は、時刻に変換できません。");
             }

@@ -103,7 +103,7 @@ namespace ShohinDesktopAdoNet.FormDesigns
 
             labelFoot = new Label();
             labelFoot.AutoSize = false;
-            labelFoot.Text = "Copyright (c)  2021-2022  fujio-development";
+            labelFoot.Text = "Copyright (c)  2021-2022  furumiya-development";
             labelFoot = (Label)(ControlsSetting(labelFoot, "LabelFoot", 30, 535, 300, 19));
 
             this.textBoxShohinCode = new TextBox();
@@ -143,8 +143,11 @@ namespace ShohinDesktopAdoNet.FormDesigns
             dataGridView1.Columns["EditDate"].HeaderText = "編集日付";
             dataGridView1.Columns["EditTime"].HeaderText = "編集時刻";
             dataGridView1.Columns["Remarks"].HeaderText = "備考";
-            dataGridView1.Columns["UniqueId"].Width = 250;
-            dataGridView1.Columns["Remarks"].Width = 250;
+            dataGridView1.Columns["UniqueId"].Width = 230;
+            dataGridView1.Columns["ShohinCode"].Width = 70;
+            dataGridView1.Columns["EditDate"].Width = 80;
+            dataGridView1.Columns["EditTime"].Width = 80;
+            dataGridView1.Columns["Remarks"].Width = 170;
             dataGridView1.Columns["EditDate"].DefaultCellStyle.Format = "0000/00/00";
             dataGridView1.Columns["EditTime"].DefaultCellStyle.Format = "00:00:00";
             dataGridView1.AllowUserToAddRows = false;
